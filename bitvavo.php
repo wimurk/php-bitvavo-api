@@ -361,7 +361,7 @@ function sortAndInsert($update, $book, $sortFunc) {
 }
 
 class Websocket {
-  public function __construct($bitvavo = null, $reconnect = false, $publicCommandArray, $privateCommandArray, $oldSocket) {
+  public function __construct($bitvavo = null, $reconnect = false, $publicCommandArray = null, $privateCommandArray = null, $oldSocket = null) {
     $this->parent = $bitvavo;
     $this->wsurl = $bitvavo->wsurl;
     $this->apiKey = $bitvavo->apiKey;
